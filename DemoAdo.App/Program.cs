@@ -63,7 +63,7 @@ using Microsoft.Data.SqlClient;
 
 string nom = "Willis";
 string prenom = "Bruce";
-string email = "bruce4.willis@imdb.com'); use master; drop database demoAdo; --";
+string email = "bruce.willis@imdb.com'); DELETE FROM Personne; --";
 
 
 using (SqlConnection connection = new SqlConnection())
@@ -74,7 +74,11 @@ using (SqlConnection connection = new SqlConnection())
 
     using (SqlCommand command = connection.CreateCommand())
     {
-        command.CommandText = $"INSERT INTO Personne (Nom, Prenom, Email) VALUES (N'{nom}', N'{prenom}', N'{email}')";
+        command.CommandText = $"INSERT INTO Personne (Nom, Prenom, Email) VALUES (@Nom, @Prenom, @Email);";
+        Console.WriteLine(command.CommandText);
+        command.Parameters.AddWithValue("nom", nom);
+        command.Parameters.AddWithValue("prenom", prenom);
+        command.Parameters.AddWithValue("email", email);
 
         int rows = command.ExecuteNonQuery();
         Console.WriteLine($"Nombre de ligne(s) modifiée : {rows}");
