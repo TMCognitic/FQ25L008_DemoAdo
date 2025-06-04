@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36121.58 d17.14
+VisualStudioVersion = 17.14.36121.58
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DemoAdo.Database", "DemoAdo.Database\DemoAdo.Database.sqlproj", "{C147801D-C90E-4C58-809D-36CBC43B2DAE}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 App", "01 App", "{AB19451D-04E0-47CE-BD37-8BC48C6E8312}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "99 Tools", "99 Tools", "{739439B4-383D-447F-A560-0022E1220614}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tools.Database", "Tools.Database\Tools.Database.csproj", "{EC1B7884-7F42-420A-81CF-5813B2C72FCE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +31,10 @@ Global
 		{596778D6-ED66-4C0B-B4CB-C442E5D6F55F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{596778D6-ED66-4C0B-B4CB-C442E5D6F55F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{596778D6-ED66-4C0B-B4CB-C442E5D6F55F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC1B7884-7F42-420A-81CF-5813B2C72FCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC1B7884-7F42-420A-81CF-5813B2C72FCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC1B7884-7F42-420A-81CF-5813B2C72FCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC1B7884-7F42-420A-81CF-5813B2C72FCE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,6 +42,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{C147801D-C90E-4C58-809D-36CBC43B2DAE} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{596778D6-ED66-4C0B-B4CB-C442E5D6F55F} = {AB19451D-04E0-47CE-BD37-8BC48C6E8312}
+		{EC1B7884-7F42-420A-81CF-5813B2C72FCE} = {739439B4-383D-447F-A560-0022E1220614}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AAD61853-2FA7-4AD5-B644-77F9626991E7}
