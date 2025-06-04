@@ -4,6 +4,7 @@
 	[Nom] NVARCHAR(75) NOT NULL, 
     [Prenom] NVARCHAR(75) NOT NULL, 
     [Email] NVARCHAR(384) NOT NULL, 
+    [Tel] NVARCHAR(20) NULL, 
     CONSTRAINT [PK_Personne] PRIMARY KEY ([Id]),
     CONSTRAINT [UK_Personne_Email] UNIQUE ([Email]),
 )
